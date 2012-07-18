@@ -20,11 +20,10 @@ module.exports = function (grunt) {
         "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n" +
         "https://github.com/podefr/presentation-large-scale-apps" +
         "* Copyright (c) <%= grunt.template.today(\"yyyy\") %> Olivier Scherrer" +
-        " MIT Licensed */",
-        src: "src"
+        " MIT Licensed */"
     },
     lint: {
-      files: ["<config:meta.src>/*.js"]
+      files: ["src/*.js"]
     },
     concat: {
       dist: {
@@ -55,21 +54,12 @@ module.exports = function (grunt) {
         define: true
       }
     },
-    jstd: {
-      all: {
-        src: ["test/*.js"],
-        options: {
-            globals: [],
-            ui: "bdd",
-            reporter: "nyan"
-        }
-     }
-    },
+    jstd: {},
     uglify: {}
   });
   
   // Default task.
-  grunt.registerTask("default", "lint  concat min");
+  grunt.registerTask("default", "lint test jsDoc concat min");
   
   grunt.registerTask("test", "jstd");
   
