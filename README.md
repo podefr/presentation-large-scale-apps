@@ -4,7 +4,7 @@ This is a talk I gave at Strasbourg-Web meetup: http://www.meetup.com/Strasbourg
 
 The presentation is located in the keynote folder. 
 If you don't have keynote installed, you can also view the HTML export of the presentation by launching the index.html that is located in the same folder.
-It's also available online at this address: 
+It's also available online at this address: http://podefr.github.com/presentation-large-scale-apps
 
 ##How to run the gruntfile?
 
