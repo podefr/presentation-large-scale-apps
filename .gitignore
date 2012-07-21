@@ -1,0 +1,5 @@
+# Eclipse IDE files
+.settings/
+.project
+*/.DS_Store
+keynote/pics/.DS_Store
